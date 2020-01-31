@@ -37,8 +37,8 @@ IF EXIST "Tools\Resources" (
 		IF EXIST "Tools\GlobalSettings" (
 			IF EXIST "Tools\SeedRepository" (
 				COPY Tools\SeedRepository\seed-repository.cake
-rem				powershell .\Tools\Resources\build.ps1 -Script Seed.cake -Verbosity Diagnostic -Target Seed
-				powershell .\Tools\Resources\build.ps1 -Script seed-repository.cake -Target Seed
+				powershell .\Tools\Resources\build.ps1 -Script seed-repository.cake -Verbosity Diagnostic -Target Seed
+rem				powershell .\Tools\Resources\build.ps1 -Script seed-repository.cake -Target Seed
 			) ELSE (
 				powershell write-host -fore Red "File Tools\GlobalSettings\seed-repository.cake not exist."
 			)
